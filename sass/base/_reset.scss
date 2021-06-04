@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  /* font-size: 10px;
+   means that 1 rem is always 10px */
+  font-size: 62.5%;
+  /* default browser font size is 16px
+  .625 * 16 = 10
+  now the default font size is 10px */ 
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
