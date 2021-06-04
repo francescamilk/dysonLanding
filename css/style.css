@@ -26,7 +26,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a {
   font-family: 'Cabin', sans-serif; }
 
 h1 {
@@ -41,9 +42,9 @@ h3 {
 /* h4 {
   font-size: ;
 } */
-h5 {
-  font-size: 1.5rem;
-  font-weight: 400; }
+h5,
+a {
+  font-size: 1.4rem; }
 
 header {
   height: 100vh;
@@ -64,3 +65,28 @@ header {
 
 #h-logo {
   width: 20rem; }
+
+nav {
+  background-color: #000;
+  width: 100vw;
+  height: 6rem;
+  position: absolute;
+  z-index: 10001; }
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 6rem 0; }
+
+.nav-links {
+  display: flex; }
+  .nav-links li:not(:last-child) {
+    padding-right: 2rem; }
+  .nav-links a,
+  .nav-links a:hover {
+    color: #FFF; }
+
+#nav-logo {
+  width: 8rem;
+  height: 3rem;
+  margin-top: -.5rem; }

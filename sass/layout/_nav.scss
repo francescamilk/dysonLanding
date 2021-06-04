@@ -1,0 +1,32 @@
+nav {
+  background-color: #000;
+  width: 100vw;
+  height: 6rem;
+  position: absolute;
+  z-index: 10001;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 6rem 0;
+}
+
+.nav-links {
+  display: flex;
+
+  li:not(:last-child) {
+    padding-right: 2rem;
+  }
+
+  a,
+  a:hover {
+    color: $dWhite;
+  }
+}
+
+#nav-logo {
+  width: 8rem;
+  height: 3rem;
+  margin-top: -.5rem;
+}
