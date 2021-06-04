@@ -1,0 +1,22 @@
+{
+  "name": "dyson-landing",
+  "version": "1.0.0",
+  "description": "// FIND ME ON > https://francescamilk.github.io/dyson-landing/",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francescamilk/dyson-landing.git"
+  },
+  "author": "francescamilk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francescamilk/dyson-landing/issues"
+  },
+  "homepage": "https://github.com/francescamilk/dyson-landing#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
