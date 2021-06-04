@@ -4,7 +4,6 @@ header {
 }
 
 .h-copy {
-  text-align: left;
   color: $dWhite;
   position: absolute;
   top: 12rem;
@@ -25,4 +24,16 @@ header {
 
 #h-logo {
   width: 20rem;
+}
+
+@media (orientation: portrait) {
+  .h-copy {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+}
 }
