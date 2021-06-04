@@ -1,0 +1,28 @@
+header {
+  height: 100vh;
+  position: relative;
+}
+
+.h-copy {
+  text-align: left;
+  color: $dWhite;
+  position: absolute;
+  top: 12rem;
+  left: 6rem;
+
+  h1 {
+    margin-top: 0.5rem;
+  }
+
+  h3 {
+    margin: 1rem 0 3rem;
+  }
+
+  h5 {
+    line-height: 1.5;
+  }
+}
+
+#h-logo {
+  width: 20rem;
+}
