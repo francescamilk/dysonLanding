@@ -1,0 +1,65 @@
+// PROD BAND 
+.prod-band {
+  height: 8rem;
+  background-color: $dMain;
+  color: $dWhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pb-mobile {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .prod-band {
+    margin-top: -.5rem;
+  }
+
+  .pb-desktop {
+    display: none;
+  }
+
+  .pb-mobile {
+    display: inline;
+    margin: auto;
+  }
+}
+
+// BRAND BAND
+#brand-features {
+  @include spacer-sm;
+
+  h3 {
+    padding: 1rem 0;
+  }
+}
+
+.bf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px $dLightGrey solid;
+  border-bottom: 1px $dLightGrey solid;
+  padding: 1rem 0;
+}
+
+.b-feature {
+  display: flex;
+
+  i {
+    font-size: 2rem;
+    padding: .5rem 1rem 0 0;
+  }
+}
+
+@media (orientation: portrait) {
+  .bf-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .b-feature {
+    padding: 1rem 0;
+  }
+}

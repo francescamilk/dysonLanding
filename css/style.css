@@ -13,7 +13,8 @@ html {
   font-size: 62.5%;
   /* default browser font size is 16px
   .625 * 16 = 10
-  now the default font size is 10px */ }
+  now the default font size is 10px */
+  width: 100vw; }
 
 a,
 a:hover {
@@ -21,6 +22,14 @@ a:hover {
 
 ul {
   list-style: none; }
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  display: inline !important; }
 
 h1,
 h2,
@@ -44,7 +53,17 @@ h3 {
 } */
 h5,
 a {
-  font-size: 1.4rem; }
+  font-size: 1.7rem; }
+
+p {
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  width: 85vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
 
 .hr-style {
   border: 0;
@@ -55,7 +74,10 @@ a {
 
 header {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  header video {
+    width: 100vw; }
 
 .h-copy {
   color: #FFF;
@@ -73,6 +95,11 @@ header {
   width: 20rem; }
 
 @media (orientation: portrait) {
+  header {
+    height: auto; }
+    header video {
+      width: auto;
+      height: 100vh; }
   .h-copy {
     position: absolute;
     top: 12rem;
@@ -108,3 +135,48 @@ nav {
 @media (orientation: portrait) {
   nav {
     display: none; } }
+
+.prod-band {
+  height: 8rem;
+  background-color: #C4398D;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.pb-mobile {
+  display: none; }
+
+@media (orientation: portrait) {
+  .prod-band {
+    margin-top: -.5rem; }
+  .pb-desktop {
+    display: none; }
+  .pb-mobile {
+    display: inline;
+    margin: auto; } }
+
+#brand-features {
+  margin: 2rem auto; }
+  #brand-features h3 {
+    padding: 1rem 0; }
+
+.bf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px #EBEAEA solid;
+  border-bottom: 1px #EBEAEA solid;
+  padding: 1rem 0; }
+
+.b-feature {
+  display: flex; }
+  .b-feature i {
+    font-size: 2rem;
+    padding: .5rem 1rem 0 0; }
+
+@media (orientation: portrait) {
+  .bf-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .b-feature {
+    padding: 1rem 0; } }

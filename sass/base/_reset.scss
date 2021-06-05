@@ -14,6 +14,7 @@ html {
   /* default browser font size is 16px
   .625 * 16 = 10
   now the default font size is 10px */ 
+  width: 100vw;
 }
 
 a,
@@ -23,4 +24,13 @@ a:hover {
 
 ul {
   list-style: none;
+}
+
+.fa, 
+.fab, 
+.fad, 
+.fal, 
+.far, 
+.fas{
+  display: inline !important;
 }

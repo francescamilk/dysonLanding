@@ -1,11 +1,15 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/layout';
 
 @import 'components/decoration';
 
 @import 'layout/header';
 @import 'layout/nav';
+
+@import 'pages/home';
 
 @import 'vendors/font';
