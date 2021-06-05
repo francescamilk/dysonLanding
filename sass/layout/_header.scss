@@ -49,5 +49,10 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 25rem;
+    @include centerer-xy(true, true);
+
+    h5 {
+      display: none;
+    }
   }
 }

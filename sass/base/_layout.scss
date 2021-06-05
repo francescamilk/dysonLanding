@@ -1,4 +1,4 @@
 .container {
   width: 85vw;
-  @include centerer(true, false);
+  @include centerer-xy(true, false);
 }

@@ -1,4 +1,4 @@
-@mixin centerer($center-x: true, $center-y: true) {
+@mixin centerer-xy($center-x: true, $center-y: true) {
   position: absolute;
   @if ($center-x and $center-y) {
     top: 50%;
@@ -13,6 +13,7 @@
   }
 }
 
+// SPACING
 @mixin spacer-sm {
   margin: 2rem auto;
 }
@@ -23,4 +24,27 @@
 
 @mixin spacer-lg {
   margin: 6rem auto;
+}
+
+// BASIC FLEXBOX 
+// (es. splitpage)
+@mixin row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@mixin col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+@mixin double-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 3;
 }

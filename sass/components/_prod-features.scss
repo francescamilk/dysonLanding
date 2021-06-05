@@ -1,0 +1,17 @@
+/* #product-features {
+  @include row;
+  height: 100vh;
+}
+
+.pf-copy {
+  @include col;
+}
+
+.pf-img {
+  @include double-col;
+
+  img {
+    height: 600px;
+    width: 250px;
+  }
+} */
