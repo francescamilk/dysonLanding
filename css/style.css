@@ -42,9 +42,9 @@ a {
 h1 {
   font-size: 4.5rem; }
 
-/* h2 {
-  font-size: ;
-} */
+h2 {
+  font-size: 3rem; }
+
 h3 {
   font-size: 2.5rem; }
 
@@ -61,9 +61,7 @@ p {
 
 .container {
   width: 85vw;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0); }
+  margin: 0 auto; }
 
 .hr-style {
   border: 0;
@@ -72,25 +70,71 @@ p {
   margin: auto;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)); }
 
-/* #product-features {
-  @include row;
-  height: 100vh;
-}
+#prod-features {
+  margin: 8rem auto; }
+
+.pf-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh; }
 
 .pf-copy {
-  @include col;
-}
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2; }
+  .pf-copy h2 {
+    margin-bottom: 2rem; }
 
 .pf-img {
-  @include double-col;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 3; }
+  .pf-img img {
+    height: 60rem;
+    width: 25rem;
+    margin-right: 25rem; }
 
-  img {
-    height: 600px;
-    width: 250px;
-  }
-} */
+.img-btn,
+.pick-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.cp-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #EBEAEA;
+  box-shadow: inset 0 0 0 2px #FFF;
+  margin: 0 .5rem;
+  cursor: pointer; }
+
+#btn-pink {
+  background: linear-gradient(-45deg, #C4398D, #C4398D 49%, #FFF 49%, #FFF 51%, #bbb 51%); }
+
+#btn-purple {
+  background: linear-gradient(-45deg, #000, #000 49%, #FFF 49%, #FFF 51%, #694CA8 51%); }
+
+@media (orientation: portrait) {
+  .pf-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .img-btn {
+    display: block; }
+    .img-btn img {
+      height: 48rem;
+      width: 20rem;
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0); } }
+
 header {
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden; }
   header video {
@@ -232,14 +276,13 @@ nav {
   color: #FFF;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: -.5rem; }
 
 .pb-mobile {
   display: none; }
 
 @media (orientation: portrait) {
-  .prod-band {
-    margin-top: -.5rem; }
   .pb-desktop {
     display: none; }
   .pb-mobile {
@@ -247,13 +290,14 @@ nav {
     margin: auto; } }
 
 #brand-features {
-  margin: 2rem auto; }
+  margin: 3rem auto; }
   #brand-features h3 {
-    padding: 1rem 0; }
+    margin-bottom: 1rem; }
 
 .bf-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
   border-top: 1px #EBEAEA solid;
   border-bottom: 1px #EBEAEA solid;
   padding: 1rem 0; }

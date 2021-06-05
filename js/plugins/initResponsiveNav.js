@@ -1,4 +1,4 @@
-const navSlide = () => {
+const responsiveNav = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('#nav');
   const navLinks = document.querySelector('.nav-links');
@@ -25,4 +25,4 @@ const navSlide = () => {
   });
 };
 
-export {navSlide};
+export {responsiveNav};

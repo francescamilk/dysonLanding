@@ -1,7 +1,9 @@
-import {navSlide} from './plugins/initResponsiveNav.js';
+import {responsiveNav} from './plugins/initResponsiveNav.js';
+import {prodColorPick} from './plugins/initProdColorPick.js'
 
 const app = () => {
-   navSlide();
+   responsiveNav();
+   prodColorPick();
 };
 
 app();

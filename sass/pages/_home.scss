@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -.5rem;
 }
 
 .pb-mobile {
@@ -13,10 +14,6 @@
 }
 
 @media (orientation: portrait) {
-  .prod-band {
-    margin-top: -.5rem;
-  }
-
   .pb-desktop {
     display: none;
   }
@@ -32,13 +29,14 @@
   @include spacer-sm;
 
   h3 {
-    padding: 1rem 0;
+    margin-bottom: 1rem;
   }
 }
 
 .bf-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
   border-top: 1px $dLightGrey solid;
   border-bottom: 1px $dLightGrey solid;
   padding: 1rem 0;
