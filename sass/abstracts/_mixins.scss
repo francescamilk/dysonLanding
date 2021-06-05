@@ -26,25 +26,42 @@
   margin: 8rem auto;
 }
 
-// BASIC FLEXBOX 
+// BASIC GRID&FLEX
 // (es. splitpage)
 @mixin row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  width: $containerWidth;
 }
 
 @mixin col {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 2;
+  background-color: red;
 }
 
 @mixin double-col {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 3;
+  background-color: blue;
+}
+
+// @mixin row {
+//   display: grid;
+//   grid-template-columns: repeat(5, 1fr);
+// }
+
+// @mixin col {
+//   grid-column: 1 / 3;
+// }
+
+// @mixin double-col {
+//   grid-column: 3 / 6;
+// }
+
+@mixin split-screen-half {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
