@@ -80,15 +80,20 @@ p {
   overflow: hidden;
   margin: 8rem auto; }
   #prod-features .container {
-    display: flex; }
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 135px; }
 
 .pf-copy {
-  width: 35vw; }
+  width: 35vw;
+  grid-column-start: 1; }
   .pf-copy h2 {
     margin-bottom: 2rem; }
 
 .pf-img img {
-  margin-left: 15rem; }
+  margin-left: 15rem;
+  grid-column-start: 2; }
 
 .img-btn,
 .pick-btn {
@@ -98,7 +103,8 @@ p {
 
 .pick-btn {
   position: absolute;
-  right: 55rem; }
+  right: 60rem;
+  bottom: -125rem; }
 
 .cp-btn {
   width: 3rem;
@@ -115,6 +121,19 @@ p {
 #btn-purple {
   background: linear-gradient(-45deg, #000, #000 49%, #FFF 49%, #FFF 51%, #694CA8 51%); }
 
+.select-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.select-buttons,
+#color-pick-img {
+  height: 75rem;
+  width: 30rem;
+  position: absolute;
+  right: 28rem;
+  bottom: -125rem; }
+
 .plus-btn {
   width: 3rem;
   height: 3rem;
@@ -124,19 +143,19 @@ p {
   font-size: 2rem;
   position: absolute; }
   .plus-btn:nth-child(1) {
-    right: 33rem; }
+    grid-area: 1 / 8; }
   .plus-btn:nth-child(2) {
-    left: 75rem; }
+    grid-area: 2 / 2; }
   .plus-btn:nth-child(3) {
-    right: 36rem; }
+    grid-area: 5 / 7; }
   .plus-btn:nth-child(4) {
-    left: 75rem; }
+    grid-area: 8 / 3; }
   .plus-btn:nth-child(5) {
-    right: 40rem; }
+    grid-area: 10 / 6; }
   .plus-btn:nth-child(6) {
-    left: 78rem; }
+    grid-area: 12 / 3; }
   .plus-btn:nth-child(7) {
-    right: 38rem; }
+    grid-area: 13 / 6; }
 
 .pf-text {
   margin-top: 6rem;
@@ -164,20 +183,32 @@ p {
   .img-btn {
     display: block; }
     .img-btn img {
-      height: 48rem;
       padding-top: 3rem;
       position: absolute;
-      left: 15%;
-      transform: translate(-50%, 0); }
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      right: 0 !important;
+      bottom: 0 !important;
+      height: 40rem !important;
+      width: auto !important;
+      margin: 0 !important; }
   .plus-btn {
-    display: none; } }
+    display: none; }
+  .select-buttons,
+  #color-pick-img {
+    position: relative; } }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
   .img-btn {
     display: flex !important;
     justify-content: space-around !important; }
     .img-btn img {
-      position: relative !important; } }
+      position: relative !important;
+      margin-left: -85rem !important;
+      margin-top: -20rem !important;
+      transform: rotate(90deg);
+      height: 85vw !important; } }
 
 #brand-features {
   margin: 3rem auto; }
