@@ -4,13 +4,14 @@
   background-image: url("../../images/dyson-offer.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
+  margin-top: 1.5rem;
 }
 
 .offer-details {
   width: 34vw;
-  position: relative;
-  top: 6em;
-  left: 80px;
+  @include centerer-xy(false, true);
+  left: 10rem;
 
   h2 {
     margin-top: 3rem;
@@ -80,7 +81,7 @@
   #offer {
     height: 40vh;
   }
-  
+
   h2,
   h4,
   h3 {
