@@ -104,7 +104,7 @@ p {
 .pick-btn {
   position: absolute;
   right: 60rem;
-  bottom: -125rem; }
+  bottom: -94rem; }
 
 .cp-btn {
   width: 3rem;
@@ -123,8 +123,8 @@ p {
 
 .select-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(14, 1fr); }
 
 .select-buttons,
 #color-pick-img {
@@ -163,7 +163,7 @@ p {
   background-color: #303030;
   color: #FFF;
   padding: 3.5rem 2.5rem; }
-  .pf-text a {
+  .pf-text .pf-next {
     font-size: 1.6rem;
     color: #FFF; }
 
@@ -178,8 +178,8 @@ p {
     grid-template-columns: repeat(1, 1fr); }
   .pf-copy {
     width: 100%; }
-  .pf-text {
-    margin: 3rem 0; }
+    .pf-copy .pf-text {
+      margin: 3rem 0; }
   .img-btn {
     display: block; }
     .img-btn img {
@@ -195,6 +195,12 @@ p {
   .select-buttons {
     right: 0;
     bottom: 0; }
+  .select-buttons,
+  #color-pick-img {
+    position: relative;
+    margin-top: -38rem;
+    height: 38rem;
+    width: 26rem; }
   .plus-btn {
     display: block; }
     .plus-btn:nth-child(1) {
@@ -208,13 +214,7 @@ p {
     .plus-btn:nth-child(6) {
       grid-area: 12 / 4; }
     .plus-btn:nth-child(7) {
-      grid-area: 13 / 7; }
-  .select-buttons,
-  #color-pick-img {
-    position: relative;
-    margin-top: -38rem;
-    height: 38rem;
-    width: 26rem; } }
+      grid-area: 13 / 7; } }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
   .img-btn {
@@ -223,7 +223,7 @@ p {
     .img-btn img {
       position: relative !important;
       margin-left: -85rem !important;
-      margin-top: -20rem !important;
+      margin-top: -20vw !important;
       height: 85vw !important; }
     .img-btn .select-buttons,
     .img-btn #color-pick-img {

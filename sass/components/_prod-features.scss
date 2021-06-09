@@ -1,3 +1,6 @@
+// COMPONENT VARIABLES
+$bottomDesktopRight: -94rem;
+
 #prod-features {
   width: $containerWidth;
   margin: auto;
@@ -37,7 +40,7 @@
 .pick-btn {
   position: absolute;
   right: 60rem;
-  bottom: -125rem;
+  bottom: $bottomDesktopRight;
 }
 
 .cp-btn {
@@ -62,8 +65,8 @@
 // buttons responsive grid
 .select-buttons {
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(8, 1fr); 
+  grid-template-rows: repeat(14, 1fr);
 }
 
 // attach grid to img
@@ -73,7 +76,7 @@ height: 50rem;
 width: 22rem;
 position: absolute;
 right: 28rem;
-bottom: -94rem;
+bottom: $bottomDesktopRight;
 }
 
 // show features && place btn 
@@ -122,12 +125,13 @@ bottom: -94rem;
   color: $dWhite;
   padding: 3.5rem 2.5rem;
 
-  a {
+  .pf-next {
     font-size: 1.6rem;
     color: $dWhite;
   }
 }
 
+// class to show specific feature
 .txt-show {
   display: block !important;
 }
@@ -144,10 +148,10 @@ bottom: -94rem;
 
   .pf-copy {
     width: 100%;
-  }
 
-  .pf-text {
-    margin: 3rem 0;
+    .pf-text {
+      margin: 3rem 0;
+    }
   }
   
   .img-btn {
@@ -168,6 +172,14 @@ bottom: -94rem;
   .select-buttons {
     right: 0;
     bottom: 0;
+  }
+
+  .select-buttons, 
+  #color-pick-img {
+    position: relative;
+    margin-top: -38rem;
+    height: 38rem;
+    width: 26rem;
   }
 
   .plus-btn {
@@ -197,14 +209,6 @@ bottom: -94rem;
       grid-area: 13 / 7;
     }
   }
-
-  .select-buttons, 
-  #color-pick-img {
-    position: relative;
-    margin-top: -38rem;
-    height: 38rem;
-    width: 26rem;
-  }
 }
 
 // specific tablet && override generic
@@ -230,6 +234,7 @@ bottom: -94rem;
   }
 
   .select-buttons {
+    // define effect later
     display: none;
   }
 }
