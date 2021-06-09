@@ -108,9 +108,21 @@
 }
 
 @media (orientation: portrait) {
+  #prod-features .container {
+    display: block;
+  }
+
   .pf-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pf-copy {
+    width: 100%;
+  }
+
+  .pf-text {
+    margin: 3rem 0;
   }
   
   .img-btn {
@@ -118,13 +130,26 @@
 
     img {
       height: 48rem;
+      padding-top: 3rem;
       position: absolute;
-      left: 35%;
+      left: 15%;
       transform: translate(-50%, 0);
     }
   }
 
   .plus-btn {
     display: none;
+  }
+}
+
+// specific tablet && override generic
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .img-btn {
+    display: flex !important;
+    justify-content: space-around !important;
+
+    img {
+      position: relative !important;
+    }
   }
 }
