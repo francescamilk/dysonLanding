@@ -69,11 +69,11 @@
 // attach grid to img
 .select-buttons,
 #color-pick-img {
-height: 75rem;
-width: 30rem;
+height: 50rem;
+width: 22rem;
 position: absolute;
 right: 28rem;
-bottom: -125rem;
+bottom: -94rem;
 }
 
 // show features && place btn 
@@ -165,13 +165,45 @@ bottom: -125rem;
     }
   }
 
+  .select-buttons {
+    right: 0;
+    bottom: 0;
+  }
+
   .plus-btn {
-    display: none;
+    display: block;
+
+    &:nth-child(1) {
+      grid-area: 1 / 7;
+    }
+  
+    &:nth-child(2) {
+      grid-area: 2 / 4;
+    }
+  
+    &:nth-child(4) {
+      grid-area: 8 / 4;
+    }
+
+    &:nth-child(5) {
+      grid-area: 10 / 7;
+    }
+  
+    &:nth-child(6) {
+      grid-area: 12 / 4;
+    }
+
+    &:nth-child(7) {
+      grid-area: 13 / 7;
+    }
   }
 
   .select-buttons, 
   #color-pick-img {
     position: relative;
+    margin-top: -38rem;
+    height: 38rem;
+    width: 26rem;
   }
 }
 
@@ -184,9 +216,20 @@ bottom: -125rem;
     img {
       position: relative !important;
       margin-left: -85rem !important;
-      margin-top: -20rem !important;
-      transform: rotate(90deg);
+      margin-top: -20vw !important;
       height: 85vw !important;
     }
+
+    .select-buttons,
+    #color-pick-img {
+      transform: rotate(90deg);
+      margin-top: -55rem;
+      height: 30rem;
+      width: 90rem;
+    }
+  }
+
+  .select-buttons {
+    display: none;
   }
 }
