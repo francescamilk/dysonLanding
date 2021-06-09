@@ -1,0 +1,33 @@
+#offer {
+  width: 100vw;
+  height: 75vh;
+  background-image: url("../../images/dyson-offer.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.offer-details {
+  width: 34vw;
+  position: relative;
+  top: 6em;
+  left: 80px;
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 5rem;
+  }
+
+  i,
+  a {
+    color: $dBlack;
+    font-size: 2rem;
+  }
+}
+
+#offer-logo {
+  width: 20rem;
+}

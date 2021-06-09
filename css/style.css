@@ -76,24 +76,14 @@ p {
 
 #prod-features {
   width: 85vw;
-  margin: auto;
   overflow: hidden;
+  margin-bottom: 0 !important;
   margin: 8rem auto; }
-  #prod-features .container {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 135px; }
 
 .pf-copy {
-  width: 35vw;
-  grid-column-start: 1; }
+  width: 35vw; }
   .pf-copy h2 {
     margin-bottom: 2rem; }
-
-.pf-img img {
-  margin-left: 15rem;
-  grid-column-start: 2; }
 
 .img-btn,
 .pick-btn {
@@ -104,7 +94,7 @@ p {
 .pick-btn {
   position: absolute;
   right: 60rem;
-  bottom: -94rem; }
+  bottom: -95rem; }
 
 .cp-btn {
   width: 3rem;
@@ -132,7 +122,7 @@ p {
   width: 22rem;
   position: absolute;
   right: 28rem;
-  bottom: -94rem; }
+  bottom: -95rem; }
 
 .plus-btn {
   width: 3rem;
@@ -158,7 +148,7 @@ p {
     grid-area: 13 / 6; }
 
 .pf-text {
-  margin-top: 6rem;
+  margin-top: 20rem;
   display: none;
   background-color: #303030;
   color: #FFF;
@@ -171,8 +161,6 @@ p {
   display: block !important; }
 
 @media (orientation: portrait) {
-  #prod-features .container {
-    display: block; }
   .pf-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
@@ -260,6 +248,31 @@ p {
     grid-template-columns: repeat(1, 1fr); }
   .b-feature {
     padding: 1rem 0; } }
+
+#offer {
+  width: 100vw;
+  height: 75vh;
+  background-image: url("../../images/dyson-offer.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.offer-details {
+  width: 34vw;
+  position: relative;
+  top: 6em;
+  left: 80px; }
+  .offer-details h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem; }
+  .offer-details h3 {
+    margin-top: 5rem; }
+  .offer-details i,
+  .offer-details a {
+    color: #000;
+    font-size: 2rem; }
+
+#offer-logo {
+  width: 20rem; }
 
 header {
   height: 100%;

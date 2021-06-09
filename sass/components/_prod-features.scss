@@ -1,33 +1,19 @@
 // COMPONENT VARIABLES
-$bottomDesktopRight: -94rem;
+$bottomDesktopRight: -95rem;
 
 #prod-features {
   width: $containerWidth;
-  margin: auto;
   overflow: hidden;
+  margin-bottom: 0 !important;
   @include spacer-lg;
-
-  // container of this div responsive grid
-  .container {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 135px;
-  }
 }
 
 .pf-copy {
   width: 35vw;
-  grid-column-start: 1;
 
   h2 {
     margin-bottom: 2rem;
   }
-}
-
-.pf-img img {
-  margin-left: 15rem;
-  grid-column-start: 2;
 }
 
 .img-btn, 
@@ -72,11 +58,11 @@ $bottomDesktopRight: -94rem;
 // attach grid to img
 .select-buttons,
 #color-pick-img {
-height: 50rem;
-width: 22rem;
-position: absolute;
-right: 28rem;
-bottom: $bottomDesktopRight;
+  height: 50rem;
+  width: 22rem;
+  position: absolute;
+  right: 28rem;
+  bottom: $bottomDesktopRight;
 }
 
 // show features && place btn 
@@ -119,7 +105,7 @@ bottom: $bottomDesktopRight;
 }
 
 .pf-text {
-  margin-top: 6rem;
+  margin-top: 20rem;
   display: none;
   background-color: $dDarkGrey;
   color: $dWhite;
@@ -137,10 +123,6 @@ bottom: $bottomDesktopRight;
 }
 
 @media (orientation: portrait) {
-  #prod-features .container {
-    display: block;
-  }
-
   .pf-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
