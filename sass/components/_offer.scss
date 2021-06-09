@@ -31,3 +31,64 @@
 #offer-logo {
   width: 20rem;
 }
+
+@media (orientation: portrait) {
+  #offer {
+    margin-top: -.4rem;
+    background-position: right;
+  }
+
+  .offer-details {
+    width: 100vw;
+    height: 100%;
+    position: relative !important;
+    top: 0;
+    color: $dWhite;
+    @include centerer-xy(true, false);
+
+    &::after {
+      content: "";
+      background-color: $dBlack;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;   
+    }
+
+    i,
+    a {
+      color: $dWhite;
+    }
+
+    h2,
+    h4,
+    h3 {
+      margin-left: 2rem;
+    }
+  }
+
+  #offer-logo {
+    margin: 10rem 0 0 2rem;
+  }
+}
+
+// specific tablet && override generic
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  #offer {
+    height: 40vh;
+  }
+  
+  h2,
+  h4,
+  h3 {
+    margin-left: 10rem !important;
+    padding-right: 10rem;
+  }
+
+  #offer-logo {
+    margin: 10rem 0 0 10rem !important;
+  }
+}
