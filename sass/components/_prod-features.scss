@@ -3,11 +3,10 @@
   margin: auto;
   overflow: hidden;
   @include spacer-lg;
-}
 
-.pf-content {
-  height: 100vh;
-  display: flex;
+  .container {
+    display: flex;
+  }
 }
 
 .pf-copy {
@@ -18,14 +17,8 @@
   }
 }
 
-.pf-img {
-  width: 65vw;
-
-  img {
-    height: 60rem;
-    width: 100rem;
-    margin-right: 25rem;
-  }
+.pf-img img {
+  margin-left: 15rem;
 }
 
 .img-btn, 
@@ -33,6 +26,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.pick-btn {
+  position: absolute;
+  right: 55rem;
 }
 
 .cp-btn {
@@ -93,8 +91,16 @@
 }
 
 .pf-text {
-  margin-top: 3rem;
+  margin-top: 6rem;
   display: none;
+  background-color: $dDarkGrey;
+  color: $dWhite;
+  padding: 3.5rem 2.5rem;
+
+  a {
+    font-size: 1.6rem;
+    color: $dWhite;
+  }
 }
 
 .txt-show {
@@ -112,9 +118,9 @@
 
     img {
       height: 48rem;
-      width: 20rem;
-      margin: 0;
-      @include centerer-xy(true, false);
+      position: absolute;
+      left: 35%;
+      transform: translate(-50%, 0);
     }
   }
 
