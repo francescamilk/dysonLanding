@@ -12,6 +12,10 @@
   }
 }
 
+.big-vid-preview {
+  background-image: url('../../images/video/big-vid.jpg');
+}
+
 .vid-grid {
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
@@ -23,6 +27,7 @@
   height: 20rem;
   border-radius: .1rem;
   background-position: top;
+  position: relative;
 }
 
 .vid-1 {
@@ -79,14 +84,14 @@
   font-size: 1.5rem;
   border-radius: .1rem;
   text-transform: uppercase;
+  position: absolute;
+  top: 13.5rem;
+  left: 1.5rem;
 }
 
-.vid-copy {
-  margin-top: 1rem;
-
-  h4 {
-    font-size: 1.8rem;
-  }
+.vid-copy h4 {
+  font-size: 1.8rem;
+  margin: 1rem 0 .5rem;
 }
 
 @media (orientation: portrait) {
@@ -94,7 +99,7 @@
     display: grid; 
     grid-template-columns: 1fr 0; 
     grid-template-rows: repeat(6, 1fr); 
-    gap: 5rem 0; 
+    gap: 4rem 0; 
   }
 
   .vid-1 {
