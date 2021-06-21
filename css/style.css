@@ -155,7 +155,8 @@ p {
   padding: 3.5rem 2.5rem; }
   .pf-text .pf-next {
     font-size: 1.6rem;
-    color: #FFF; }
+    color: #FFF;
+    cursor: pointer; }
 
 .txt-show {
   display: block !important; }
@@ -269,6 +270,8 @@ p {
     margin-bottom: 1rem; }
   .offer-details h3 {
     margin-top: 5rem; }
+  .offer-details h4 {
+    font-weight: 400; }
   .offer-details i,
   .offer-details a {
     color: #000;
@@ -325,9 +328,10 @@ p {
   margin: 8rem auto; }
   #prod-videos .pv-copy {
     margin-top: 0 !important;
-    margin: 6rem auto; }
+    margin: 3rem auto; }
     #prod-videos .pv-copy h5 {
-      margin: 3rem auto; }
+      margin: 3rem auto;
+      font-weight: 400; }
 
 .vid-grid {
   display: grid;
@@ -372,12 +376,34 @@ p {
 
 .vid-watch {
   background-color: #EBEAEA;
-  padding: 1.5rem 3rem;
-  font-size: 2rem;
-  border-radius: .1rem; }
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: .1rem;
+  text-transform: uppercase; }
 
 .vid-copy {
   margin-top: 1rem; }
+  .vid-copy h4 {
+    font-size: 1.8rem; }
+
+@media (orientation: portrait) {
+  .vid-grid {
+    display: grid;
+    grid-template-columns: 1fr 0;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5rem 0; }
+  .vid-1 {
+    grid-area: 1 / 1 / 2 / 2; }
+  .vid-2 {
+    grid-area: 2 / 1 / 3 / 2; }
+  .vid-3 {
+    grid-area: 3 / 1 / 4 / 2; }
+  .vid-4 {
+    grid-area: 4 / 1 / 5 / 2; }
+  .vid-5 {
+    grid-area: 5 / 1 / 6 / 2; }
+  .vid-6 {
+    grid-area: 6 / 1 / 7 / 2; } }
 
 header {
   height: 100%;
