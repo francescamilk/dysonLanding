@@ -333,7 +333,7 @@ p {
       margin: 3rem auto;
       font-weight: 400; }
 
-.big-vid .big-vid-preview {
+.big-vid-preview {
   background-image: url("../../images/video/big-vid.jpg"); }
 
 .vid-grid {
@@ -570,3 +570,43 @@ nav {
   .pb-mobile {
     display: inline;
     margin: auto; } }
+
+.comp-band {
+  height: 8rem;
+  background-color: #C4398D;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .comp-band h3 {
+    width: 100vw;
+    text-align: center; }
+
+.competitor-vid {
+  width: 100%; }
+
+.cv-copy {
+  text-align: center;
+  margin: 3rem auto; }
+
+.watch-btn {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 6rem auto; }
+  .watch-btn .w-play {
+    height: 85px;
+    width: 85px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .watch-btn .w-copy {
+    height: 85px;
+    width: 340px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

@@ -1,6 +1,9 @@
+// BANDS VARIABLES
+$bandHeight: 8rem;
+
 // PROD BAND 
 .prod-band {
-  height: 8rem;
+  height: $bandHeight;
   background-color: $dMain;
   color: $dWhite;
   display: flex;
@@ -9,6 +12,7 @@
   margin-top: -.5rem;
 }
 
+// ALL BANDS COPY
 .pb-mobile {
   display: none;
 }
@@ -22,4 +26,55 @@
     display: inline;
     margin: auto;
   }
+}
+
+// COMPETITOR VIDEO & BAND
+.comp-band {
+  height: $bandHeight;
+  background-color: $dMain;
+  color: $dWhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h3 {
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+.competitor-vid {
+  width: 100%;
+}
+
+.cv-copy {
+  text-align: center;
+  @include spacer-sm;
+}
+
+.watch-btn {
+  color: $dWhite;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  @include spacer-md;
+
+  .w-play {
+  height: 85px;
+  width: 85px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-copy {
+  height: 85px;
+  width: 340px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
