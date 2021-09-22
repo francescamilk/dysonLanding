@@ -1,4 +1,4 @@
-#p-reviews {
+#reviews {
   @include spacer-lg;
 }
 
@@ -85,7 +85,7 @@
 
 .r-card {
   padding-bottom: 1.5rem;
-  box-shadow: 1px 2px 5px #eee;
+  box-shadow: .1rem .2rem .5rem #eee;
   position: relative;
   margin: 1rem;
   border-radius: .4rem;
@@ -125,7 +125,7 @@
 
   hr {
     border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: .1rem solid rgba(0,0,0,.1);
     width: 85%;
     margin: 0 auto 1rem;
   }

@@ -1,7 +1,9 @@
-#p-buy {
+#buy {
   margin-bottom: 8rem;
 
-  // @include spacer-sm;
+  h2 {
+    margin-bottom: 3rem;
+  }
 }
 
 .buy-cards {
@@ -29,12 +31,12 @@
   }
 
   h3 {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   hr {
     border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: .1rem solid rgba(0,0,0,.1);
     width: 100%;
     margin: 2rem 0;
   }

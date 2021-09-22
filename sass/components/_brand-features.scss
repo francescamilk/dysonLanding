@@ -1,4 +1,4 @@
-#brand-features {
+#features {
   @include spacer-sm;
   
   h3 {
@@ -7,8 +7,8 @@
 }
 
 .bf-grid {
-  border-top: 1px $dLightGrey solid;
-  border-bottom: 1px $dLightGrey solid;
+  border-top: .1rem $dLightGrey solid;
+  border-bottom: .1rem $dLightGrey solid;
   padding: 1rem 0;
 
   .container {

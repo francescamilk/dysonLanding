@@ -1,3 +1,4 @@
+// CENTERING
 @mixin centerer-xy($center-x: true, $center-y: true) {
   position: absolute;
   @if ($center-x and $center-y) {
@@ -13,6 +14,12 @@
   }
 }
 
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // SPACING
 @mixin spacer-sm {
   margin: 3rem auto;
@@ -24,39 +31,6 @@
 
 @mixin spacer-lg {
   margin: 8rem auto;
-}
-
-// BASIC GRID&FLEX
-@mixin row {
-  display: flex;
-  flex-direction: row;
-  width: $containerWidth;
-}
-
-@mixin col {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  background-color: red;
-}
-
-@mixin double-col {
-  display: flex;
-  flex-direction: column;
-  flex: 3;
-  background-color: blue;
-}
-
-
-@mixin split-screen-half {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 // MODAL LAYOUT

@@ -1,5 +1,6 @@
 .split-half {
-  @include split-screen-half;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .shadow {
@@ -28,4 +29,13 @@
 // to show modals & popups
 .show {
   display: inline !important;
+}
+
+// personalised hr
+.hr-style {
+  border: 0;
+  height: .1rem;
+  width: 50vw;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 255.75), rgba(255, 255, 255, 0));
 }

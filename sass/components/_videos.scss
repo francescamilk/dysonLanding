@@ -1,4 +1,4 @@
-#prod-videos {
+#styles {
   @include spacer-lg;
 
   .pv-copy {
@@ -20,7 +20,7 @@
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: repeat(2, 1fr); 
-  gap: 40px 20px; 
+  gap: 4rem 2rem; 
 }
 
 .vid-preview {
