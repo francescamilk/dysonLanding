@@ -19,5 +19,8 @@
   "homepage": "https://github.com/francescamilk/dyson-landing#readme",
   "devDependencies": {
     "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
