@@ -571,10 +571,14 @@ p {
   border-top-right-radius: .4rem;
   margin-bottom: 1.6rem; }
 
+@media only screen and (max-width: 768px) {
+  .r-card {
+    margin: 1rem auto; } }
+
 #p-faq {
   margin: 8rem auto;
   margin-bottom: 0 !important; }
-  #p-faq span {
+  #p-faq span p {
     font-size: initial; }
   #p-faq h2 {
     margin-bottom: 2rem; }
@@ -662,13 +666,17 @@ p {
 .accordion .accordion-content {
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
-  will-change: opacity, max-height; }
+  will-change: opacity, max-height;
+  overflow: auto; }
 
 .accordion .accordion-content p {
   font-weight: 300;
   margin: 2em 0; }
+
+@media only screen and (max-width: 768px) {
+  #p-faq p {
+    padding-right: 4rem; } }
 
 #owner-bar {
   height: 8rem;

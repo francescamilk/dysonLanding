@@ -2,7 +2,7 @@
   @include spacer-lg; 
   margin-bottom: 0 !important;
 
-  span {
+  span p {
     font-size: initial;
   }
 
@@ -108,12 +108,18 @@
 .accordion .accordion-content {
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
+  overflow: auto;
 }
 
 .accordion .accordion-content p {
   font-weight: 300;
   margin: 2em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #p-faq p {
+    padding-right: 4rem;
+  }
 }
