@@ -2,7 +2,6 @@
 > https://francescamilk.github.io/dyson-landing/
 
 <br>
-<br>
 
 // BRIEFING
 
@@ -10,7 +9,6 @@ This project is a clone (with some personal touch here and there) of the Dyson C
 <br><br>
 The focus of the project is to develop interactive product page components responsively, with easy solutions and a clean code.
 
-<br>
 <br>
 
 // CREDIT DISCLAIMER
