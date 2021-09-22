@@ -820,12 +820,6 @@ footer {
   display: flex;
   justify-content: space-between; }
 
-.buy-pink {
-  height: auto; }
-
-.buy-purple {
-  height: auto; }
-
 .buy-card {
   width: 48rem;
   background-color: #F8F8F8;
