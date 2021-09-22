@@ -65,3 +65,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

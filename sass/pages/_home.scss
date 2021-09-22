@@ -1,18 +1,16 @@
 // BANDS VARIABLES
-$bandHeight: 8rem;
+$mainBandHeight: 8rem;
 
-// PROD BAND 
+// PROD (main)BAND 
 .prod-band {
-  height: $bandHeight;
+  height: $mainBandHeight;
   background-color: $dMain;
   color: $dWhite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   margin-top: -.5rem;
 }
 
-// ALL BANDS COPY
+// ALL (main)BANDS COPY
 .pb-mobile {
   display: none;
 }
@@ -28,14 +26,12 @@ $bandHeight: 8rem;
   }
 }
 
-// COMPETITOR VIDEO & BAND
+// COMPETITOR VIDEO & (main)BAND
 .comp-band {
-  height: $bandHeight;
+  height: $mainBandHeight;
   background-color: $dMain;
   color: $dWhite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   position: relative;
 
   h3 {
@@ -61,20 +57,53 @@ $bandHeight: 8rem;
   @include spacer-md;
 
   .w-play {
-  height: 85px;
-  width: 85px;
-  background-color: #303030;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 8.5rem;
+    width: 8.5rem;
+    background-color: $dDarkGrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .w-copy {
+    height: 8.5rem;
+    width: 34rem;
+    background-color: $dBlack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.w-copy {
-  height: 85px;
-  width: 340px;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// PRESS (grey)BAND
+
+.press-band {
+  height: 32rem;
+  background-color: $dDarkGrey;
+  color: $dWhite;
+  @include flex-center;
 }
+
+.press-band hr {
+  margin: 20px auto;
+  width: 20vw;
+}
+
+.pb-copy {
+  width: 60vw;
+  text-align: center;
+}
+
+.pb-copy h2 {
+  font-weight: 300;
+}
+
+.pb-copy h4 {
+  font-weight: 400;
+}
+
+@media (orientation: portrait) {
+  .press-band {
+    height: 580px;
+  }
 }

@@ -597,16 +597,42 @@ nav {
   cursor: pointer;
   margin: 6rem auto; }
   .watch-btn .w-play {
-    height: 85px;
-    width: 85px;
+    height: 8.5rem;
+    width: 8.5rem;
     background-color: #303030;
     display: flex;
     justify-content: center;
     align-items: center; }
   .watch-btn .w-copy {
-    height: 85px;
-    width: 340px;
+    height: 8.5rem;
+    width: 34rem;
     background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.press-band {
+  height: 32rem;
+  background-color: #303030;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.press-band hr {
+  margin: 20px auto;
+  width: 20vw; }
+
+.pb-copy {
+  width: 60vw;
+  text-align: center; }
+
+.pb-copy h2 {
+  font-weight: 300; }
+
+.pb-copy h4 {
+  font-weight: 400; }
+
+@media (orientation: portrait) {
+  .press-band {
+    height: 580px; } }
