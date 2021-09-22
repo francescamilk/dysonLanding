@@ -755,15 +755,20 @@ footer {
 
 .email-box {
   margin-top: 4rem; }
+  .email-box #popSubmit {
+    background-color: #C4398D;
+    color: #FFF;
+    cursor: pointer; }
   .email-box label {
     font-weight: 300;
-    color: #555; }
+    color: #303030; }
   .email-box input {
     border: none;
-    border-left: 0.2rem #C4398D solid;
+    border: 0.2rem #C4398D solid;
     border-radius: .2rem;
     height: 4rem;
-    width: 28rem; }
+    width: 26rem;
+    margin-bottom: 1rem; }
 
 .canvas-right {
   flex: 2;
@@ -781,6 +786,12 @@ footer {
 
 #pop-logo {
   width: 10rem; }
+
+@media only screen and (max-width: 768px) {
+  .email-box input {
+    width: 18rem; }
+  .canvas-right {
+    display: none; } }
 
 header {
   height: 100%;
