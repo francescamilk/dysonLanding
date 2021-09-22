@@ -83,8 +83,27 @@
   }
 }
 
+#accessoriesPink,
+#accessoriesPurple {
+  display: none;
+  
+  .acc-1,
+  .acc-2,
+  .acc-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
 
-#buyToggle {
+    img {
+      width: 5rem;
+      border: .5px solid $dLightGrey;
+    }
+  }
+}
+
+
+#buyTogglePink,
+#buyTogglePurple {
   font-weight: 800;
   cursor: pointer;
 }

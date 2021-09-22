@@ -820,6 +820,12 @@ footer {
   display: flex;
   justify-content: space-between; }
 
+.buy-pink {
+  height: auto; }
+
+.buy-purple {
+  height: auto; }
+
 .buy-card {
   width: 48rem;
   background-color: #F8F8F8;
@@ -871,7 +877,29 @@ footer {
     color: #303030;
     margin-left: .2rem; }
 
-#buyToggle {
+#accessoriesPink,
+#accessoriesPurple {
+  display: none; }
+  #accessoriesPink .acc-1,
+  #accessoriesPink .acc-2,
+  #accessoriesPink .acc-3,
+  #accessoriesPurple .acc-1,
+  #accessoriesPurple .acc-2,
+  #accessoriesPurple .acc-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem; }
+    #accessoriesPink .acc-1 img,
+    #accessoriesPink .acc-2 img,
+    #accessoriesPink .acc-3 img,
+    #accessoriesPurple .acc-1 img,
+    #accessoriesPurple .acc-2 img,
+    #accessoriesPurple .acc-3 img {
+      width: 5rem;
+      border: 0.5px solid #EBEAEA; }
+
+#buyTogglePink,
+#buyTogglePurple {
   font-weight: 800;
   cursor: pointer; }
 
