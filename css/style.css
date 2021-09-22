@@ -35,6 +35,12 @@ button {
 .fas {
   display: inline !important; }
 
+video {
+  background-color: transparent !important; }
+
+video:focus {
+  outline: none !important; }
+
 h1,
 h2,
 h3,
@@ -410,6 +416,31 @@ p {
     grid-area: 5 / 1 / 6 / 2; }
   .vid-6 {
     grid-area: 6 / 1 / 7 / 2; } }
+
+#modalContainer {
+  display: none; }
+
+#modalVideo {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#closeModal {
+  position: absolute;
+  right: 20em;
+  top: 5em;
+  background-color: transparent;
+  color: #fff;
+  height: 3em; }
+
+.show {
+  display: inline !important; }
 
 header {
   height: 100%;

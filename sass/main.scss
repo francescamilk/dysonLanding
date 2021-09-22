@@ -1,19 +1,25 @@
+// Abstract
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+// Base
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/layout';
 
+// Components
 @import 'components/decoration';
 @import 'components/prod-features';
 @import 'components/brand-features';
 @import 'components/offer';
 @import 'components/videos';
 
+// Layout
 @import 'layout/header';
 @import 'layout/nav';
 
+// Pages
 @import 'pages/home';
 
+// Vendors
 @import 'vendors/font';

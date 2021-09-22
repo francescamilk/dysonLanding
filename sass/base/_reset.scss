@@ -39,3 +39,11 @@ button {
 .fas{
   display: inline !important;
 }
+
+video {
+  background-color: transparent !important;
+}
+
+video:focus { 
+  outline: none !important; 
+}
