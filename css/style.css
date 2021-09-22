@@ -18,6 +18,9 @@
   .sm-hide {
     display: none !important; } }
 
+.show {
+  display: inline !important; }
+
 *,
 *::after,
 *::before {
@@ -459,9 +462,6 @@ p {
   color: #FFF;
   height: 3em; }
 
-.show {
-  display: inline !important; }
-
 #p-reviews {
   margin: 8rem auto; }
 
@@ -726,6 +726,61 @@ footer {
   footer .footer-links {
     padding: 1rem 2rem;
     width: auto; } }
+
+#newsletterPopup {
+  display: none; }
+  #newsletterPopup .pop-content {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.pop-canvas {
+  width: 70vw;
+  height: 80vh;
+  border-radius: .4rem;
+  display: flex;
+  margin: 0 auto; }
+  .pop-canvas .canvas-left {
+    flex: 1;
+    background-color: #fff;
+    padding: 4rem; }
+    .pop-canvas .canvas-left h3 {
+      margin-top: 6rem; }
+
+.email-box {
+  margin-top: 4rem; }
+  .email-box label {
+    font-weight: 300;
+    color: #555; }
+  .email-box input {
+    border: none;
+    border-left: 0.2rem #C4398D solid;
+    border-radius: .2rem;
+    height: 4rem;
+    width: 28rem; }
+
+.canvas-right {
+  flex: 2;
+  background-image: url("../../images/cards/card-1.jpg");
+  background-position: center;
+  background-size: cover; }
+  .canvas-right span {
+    color: #C4398D;
+    opacity: 0.8;
+    padding-right: .8rem;
+    font-size: 3.5rem;
+    cursor: pointer; }
+  .canvas-right span:hover {
+    color: #303030; }
+
+#pop-logo {
+  width: 10rem; }
 
 header {
   height: 100%;

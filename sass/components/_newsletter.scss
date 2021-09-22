@@ -1,0 +1,65 @@
+#newsletterPopup {
+  display: none;
+
+  .pop-content {
+    @include modal;
+  }
+}
+
+.pop-canvas {
+  width: 70vw;
+  height: 80vh;
+  border-radius: .4rem;
+  display: flex;
+  margin: 0 auto;
+
+  .canvas-left {
+    flex: 1;
+    background-color: #fff;
+    padding: 4rem;
+
+    h3 {
+      margin-top: 6rem;
+    }
+  }
+}
+
+.email-box {
+  margin-top: 4rem;
+
+  label {
+    font-weight: 300;
+    color: #555;
+  }
+
+  input {
+    border: none;
+    border-left: .2rem $dMain solid;
+    border-radius: .2rem;
+    height: 4rem;
+    width: 28rem;
+  }
+}
+
+.canvas-right {
+  flex: 2;
+  background-image: url('../../images/cards/card-1.jpg');
+  background-position: center;
+  background-size: cover;
+
+  span {
+    color: $dMain;
+    opacity: 0.8;
+    padding-right: .8rem;
+    font-size: 3.5rem;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: $dDarkGrey;
+  }
+}
+
+#pop-logo {
+  width: 10rem;
+}

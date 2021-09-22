@@ -27,7 +27,6 @@
 }
 
 // BASIC GRID&FLEX
-// (es. splitpage)
 @mixin row {
   display: flex;
   flex-direction: row;
@@ -48,18 +47,6 @@
   background-color: blue;
 }
 
-// @mixin row {
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-// }
-
-// @mixin col {
-//   grid-column: 1 / 3;
-// }
-
-// @mixin double-col {
-//   grid-column: 3 / 6;
-// }
 
 @mixin split-screen-half {
   display: grid;
@@ -70,4 +57,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+// MODAL LAYOUT
+@mixin modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
