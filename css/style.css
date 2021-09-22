@@ -21,6 +21,13 @@
 .show {
   display: inline !important; }
 
+.hr-style {
+  border: 0;
+  height: .1rem;
+  width: 50vw;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)); }
+
 *,
 *::after,
 *::before {
@@ -96,13 +103,6 @@ p {
   width: 85vw;
   margin: 0 auto; }
 
-.hr-style {
-  border: 0;
-  height: 1px;
-  width: 50vw;
-  margin: auto;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0)); }
-
 #prod-features {
   width: 85vw;
   overflow: hidden;
@@ -129,8 +129,8 @@ p {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 1px solid #EBEAEA;
-  box-shadow: inset 0 0 0 2px #FFF;
+  border: 0.1rem solid #EBEAEA;
+  box-shadow: inset 0 0 0 0.2rem #FFF;
   margin: 0 .5rem;
   cursor: pointer; }
 
@@ -258,8 +258,8 @@ p {
     margin-bottom: 1rem; }
 
 .bf-grid {
-  border-top: 1px #EBEAEA solid;
-  border-bottom: 1px #EBEAEA solid;
+  border-top: 0.1rem #EBEAEA solid;
+  border-bottom: 0.1rem #EBEAEA solid;
   padding: 1rem 0; }
   .bf-grid .container {
     display: grid;
@@ -369,7 +369,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 40px 20px; }
+  gap: 4rem 2rem; }
 
 .vid-preview {
   height: 20rem;
@@ -527,7 +527,7 @@ p {
 
 .r-card {
   padding-bottom: 1.5rem;
-  box-shadow: 1px 2px 5px #eee;
+  box-shadow: .1rem .2rem .5rem #eee;
   position: relative;
   margin: 1rem;
   border-radius: .4rem;
@@ -553,7 +553,7 @@ p {
       top: 1.5rem; }
   .r-card hr {
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     width: 85%;
     margin: 0 auto 1rem; }
 
@@ -838,7 +838,7 @@ footer {
     margin: 1rem 0; }
   .buy-card hr {
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: 2rem 0; }
 
@@ -1108,7 +1108,7 @@ nav {
   justify-content: center; }
 
 .press-band hr {
-  margin: 20px auto;
+  margin: .2rem auto;
   width: 20vw; }
 
 .pb-copy {
@@ -1123,4 +1123,4 @@ nav {
 
 @media (orientation: portrait) {
   .press-band {
-    height: 580px; } }
+    height: 58rem; } }
