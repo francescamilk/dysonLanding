@@ -1,0 +1,36 @@
+#owner-bar {
+  height: 8rem;
+  width: 72vw;
+  display: flex;
+}
+
+.bar-content {
+  background-color: $dGold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4rem;
+  width: 100%;
+
+  .bar-col-sm {
+    display: flex;
+    cursor: pointer;
+    width: 12rem;
+  }
+
+  h5 {
+    font-weight: 400;
+  }
+
+  i {
+    margin-top: .2rem;
+    padding: .5rem;
+  }
+}
+
+.flag {
+  background: linear-gradient(-40deg, transparent 0%, transparent 60%, $dGold 60%, $dGold 100%), linear-gradient(2195deg, transparent 0%, transparent 60%, $dGold 60%, $dGold 100%);
+  width: 9.2rem;
+  height: 8rem;
+  transform: rotate(270deg);
+}

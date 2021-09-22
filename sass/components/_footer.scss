@@ -1,0 +1,20 @@
+footer {
+  background-color: $dBlack;
+  color: $dWhite;
+  padding: 2.5rem 0 1.5rem;
+  display: flex;
+
+  .footer-main {
+    padding: 1rem 10rem 1rem 4rem;
+  }
+
+  .footer-links {
+    padding: 1rem 5rem;
+    width: 75rem;
+
+    ul li {
+      cursor: pointer;
+      font-size: initial;
+    }
+  }
+}

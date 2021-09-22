@@ -9,6 +9,9 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')"; }
 
+.mg-0 {
+  margin: 0 !important; }
+
 *,
 *::after,
 *::before {
@@ -563,7 +566,8 @@ p {
   margin-bottom: 1.6rem; }
 
 #p-faq {
-  margin: 8rem auto; }
+  margin: 8rem auto;
+  margin-bottom: 0 !important; }
   #p-faq span {
     font-size: initial; }
   #p-faq h2 {
@@ -659,6 +663,48 @@ p {
 .accordion .accordion-content p {
   font-weight: 300;
   margin: 2em 0; }
+
+#owner-bar {
+  height: 8rem;
+  width: 72vw;
+  display: flex; }
+
+.bar-content {
+  background-color: #FFCC00;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4rem;
+  width: 100%; }
+  .bar-content .bar-col-sm {
+    display: flex;
+    cursor: pointer;
+    width: 12rem; }
+  .bar-content h5 {
+    font-weight: 400; }
+  .bar-content i {
+    margin-top: .2rem;
+    padding: .5rem; }
+
+.flag {
+  background: linear-gradient(-40deg, transparent 0%, transparent 60%, #FFCC00 60%, #FFCC00 100%), linear-gradient(2195deg, transparent 0%, transparent 60%, #FFCC00 60%, #FFCC00 100%);
+  width: 9.2rem;
+  height: 8rem;
+  transform: rotate(270deg); }
+
+footer {
+  background-color: #000;
+  color: #FFF;
+  padding: 2.5rem 0 1.5rem;
+  display: flex; }
+  footer .footer-main {
+    padding: 1rem 10rem 1rem 4rem; }
+  footer .footer-links {
+    padding: 1rem 5rem;
+    width: 75rem; }
+    footer .footer-links ul li {
+      cursor: pointer;
+      font-size: initial; }
 
 header {
   height: 100%;
