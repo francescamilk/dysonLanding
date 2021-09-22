@@ -13,7 +13,7 @@
 }
 
 .big-vid-preview {
-  background-image: image-url('../../images/video/big-vid.jpg');
+  background-image: image-url('./images/video/big-vid.jpg');
 }
 
 .vid-grid {
@@ -34,7 +34,7 @@
   grid-area: 1 / 1 ;
 
   .vid-preview {
-    background-image: image-url('../../images/video/01-vid.PNG');
+    background-image: image-url('./images/video/01-vid.PNG');
   }
 }
 
@@ -42,7 +42,7 @@
   grid-area: 1 / 2;
 
   .vid-preview {
-    background-image: image-url('../../images/video/02-vid.PNG');
+    background-image: image-url('./images/video/02-vid.PNG');
   }
 }
 
@@ -50,7 +50,7 @@
   grid-area: 1 / 3;
 
   .vid-preview {
-    background-image: image-url('../../images/video/03-vid.PNG');
+    background-image: image-url('./images/video/03-vid.PNG');
   }
 }
 
@@ -58,7 +58,7 @@
   grid-area: 2 / 1;
 
   .vid-preview {
-    background-image: image-url('../../images/video/01-vid.PNG');
+    background-image: image-url('./images/video/01-vid.PNG');
   }
 }
 
@@ -66,7 +66,7 @@
   grid-area: 2 / 2;
 
   .vid-preview {
-    background-image: image-url('../../images/video/02-vid.PNG');
+    background-image: image-url('./images/video/02-vid.PNG');
   }
 }
 
@@ -74,7 +74,7 @@
   grid-area: 2 / 3;
 
   .vid-preview {
-    background-image: image-url('../../images/video/03-vid.PNG');
+    background-image: image-url('./images/video/03-vid.PNG');
   }
 }
 
