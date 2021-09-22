@@ -813,6 +813,44 @@ footer {
 #toTop:hover {
   background-color: #303030; }
 
+#p-buy {
+  margin: 8rem auto; }
+
+.buy-cards {
+  display: flex;
+  justify-content: space-between; }
+
+.buy-card {
+  width: 48rem;
+  background-color: #F8F8F8;
+  padding: 2rem;
+  border-radius: .4rem; }
+  .buy-card .prod-accessories {
+    display: flex;
+    justify-content: space-between; }
+  .buy-card .prod-price {
+    margin-bottom: 2rem; }
+    .buy-card .prod-price p {
+      font-size: 1rem; }
+  .buy-card h3 {
+    margin-bottom: 1rem; }
+  .buy-card hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 2rem 0; }
+
+.buy-btn {
+  width: -webkit-fill-available;
+  background-color: #C4398D;
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .4rem; }
+
+#buyToggle {
+  font-weight: 800;
+  cursor: pointer; }
+
 header {
   height: 100%;
   position: relative;
