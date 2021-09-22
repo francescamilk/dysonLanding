@@ -41,7 +41,8 @@
     color: $dDarkGrey;
   }
 
-  input {
+  input,
+  #popSubmit {
     border: none;
     border: .2rem $dMain solid;
     border-radius: .2rem;

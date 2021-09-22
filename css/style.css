@@ -764,7 +764,8 @@ footer {
   .email-box label {
     font-weight: 300;
     color: #303030; }
-  .email-box input {
+  .email-box input,
+  .email-box #popSubmit {
     border: none;
     border: 0.2rem #C4398D solid;
     border-radius: .2rem;
@@ -1040,7 +1041,7 @@ nav {
   }
 }
  */
-.prod-band {
+#prod-band {
   height: 8rem;
   background-color: #C4398D;
   color: #FFF;
