@@ -18,3 +18,14 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  footer .footer-main {
+    display: none;
+  }
+
+  footer .footer-links {
+    padding: 1rem 2rem;
+    width: auto;
+  }
+}

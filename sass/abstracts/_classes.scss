@@ -12,3 +12,15 @@
 .mg-0 {
   margin: 0 !important;
 }
+
+@media only screen and (max-width: 768px) {
+  // responsively make flex content full screen
+  .sm-full {
+    display: block !important;
+  }
+
+  // responsively hide
+  .sm-hide {
+    display: none !important;
+  }
+}
