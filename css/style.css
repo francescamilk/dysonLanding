@@ -814,7 +814,7 @@ footer {
   background-color: #303030; }
 
 #p-buy {
-  margin: 8rem auto; }
+  margin-bottom: 8rem; }
 
 .buy-cards {
   display: flex;
@@ -840,12 +840,36 @@ footer {
     width: 100%;
     margin: 2rem 0; }
 
-.buy-btn {
+.buy-img-pink,
+.buy-img-purple {
+  background-size: contain;
   width: -webkit-fill-available;
-  background-color: #C4398D;
-  color: #FFF;
-  padding: 1rem;
-  border-radius: .4rem; }
+  height: 22rem; }
+
+.buy-img-pink {
+  background-image: url("../images/cards/prod-pink.jpg"); }
+
+.buy-img-purple {
+  background-image: url("../images/cards/prod-purple.jpg"); }
+
+.buy-btns {
+  display: flex;
+  justify-content: space-between; }
+  .buy-btns .buy-btn,
+  .buy-btns .learn-btn {
+    padding: 1.5rem;
+    border-radius: .2rem;
+    text-align: center;
+    cursor: pointer;
+    flex-grow: 1; }
+  .buy-btns .buy-btn {
+    background-color: #C4398D;
+    color: #FFF;
+    margin-right: .2rem; }
+  .buy-btns .learn-btn {
+    background-color: #EBEAEA;
+    color: #303030;
+    margin-left: .2rem; }
 
 #buyToggle {
   font-weight: 800;

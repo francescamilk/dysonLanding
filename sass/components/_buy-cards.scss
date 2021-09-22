@@ -1,5 +1,7 @@
 #p-buy {
-  @include spacer-lg;
+  margin-bottom: 8rem;
+
+  // @include spacer-sm;
 }
 
 .buy-cards {
@@ -38,13 +40,49 @@
   }
 }
 
-.buy-btn {
+
+
+.buy-img-pink,
+.buy-img-purple {
+  background-size: contain;
   width: -webkit-fill-available;
-  background-color: $dMain;
-  color: $dWhite;
-  padding: 2rem;
-  border-radius: .2rem;
+  height: 22rem;
 }
+
+.buy-img-pink {
+  background-image: url('../images/cards/prod-pink.jpg');
+}
+
+.buy-img-purple {
+  background-image: url('../images/cards/prod-purple.jpg');
+}
+
+.buy-btns {
+  display: flex;
+  justify-content: space-between;
+
+  .buy-btn,
+  .learn-btn {
+    padding: 1.5rem;
+    border-radius: .2rem;
+    text-align: center;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  
+  .buy-btn {
+    background-color: $dMain;
+    color: $dWhite;
+    margin-right: .2rem;
+  }
+  
+  .learn-btn {
+    background-color: $dLightGrey;
+    color: $dDarkGrey;
+    margin-left: .2rem;
+  }
+}
+
 
 #buyToggle {
   font-weight: 800;
