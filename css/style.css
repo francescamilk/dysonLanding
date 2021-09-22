@@ -728,8 +728,10 @@ footer {
     width: auto; } }
 
 #newsletterPopup {
-  display: none; }
+  display: none;
+  position: relative; }
   #newsletterPopup .pop-content {
+    z-index: 1001;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -772,7 +774,7 @@ footer {
 
 .canvas-right {
   flex: 2;
-  background-image: url("../../images/cards/card-1.jpg");
+  background-image: url("../images/cards/card-1.jpg");
   background-position: center;
   background-size: cover; }
   .canvas-right span {
@@ -792,6 +794,24 @@ footer {
     width: 18rem; }
   .canvas-right {
     display: none; } }
+
+#toTop {
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: #C4398D;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 50%; }
+
+#toTop:hover {
+  background-color: #303030; }
 
 header {
   height: 100%;

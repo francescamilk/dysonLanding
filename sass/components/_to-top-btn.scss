@@ -1,0 +1,19 @@
+#toTop {
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: $dMain;
+  color: $dWhite;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#toTop:hover {
+  background-color: $dDarkGrey;
+}

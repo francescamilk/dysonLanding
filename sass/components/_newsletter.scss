@@ -4,7 +4,7 @@
 
   .pop-content {
     z-index: 1001; 
-    
+
     @include modal;
   }
 }
@@ -53,7 +53,7 @@
 
 .canvas-right {
   flex: 2;
-  background-image: url('../../images/cards/card-1.jpg');
+  background-image: url('../images/cards/card-1.jpg');
   background-position: center;
   background-size: cover;
 
