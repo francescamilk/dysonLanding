@@ -24,6 +24,9 @@
 .hide {
   display: none !important; }
 
+.flow-height {
+  height: auto !important; }
+
 .hr-style {
   border: 0;
   height: .1rem;
@@ -692,7 +695,8 @@ p {
 #owner-bar {
   height: 8rem;
   width: 72vw;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
 
 .bar-content {
   background-color: #FFCC00;
@@ -715,7 +719,8 @@ p {
   background: linear-gradient(-40deg, transparent 0%, transparent 60%, #FFCC00 60%, #FFCC00 100%), linear-gradient(2195deg, transparent 0%, transparent 60%, #FFCC00 60%, #FFCC00 100%);
   width: 9.2rem;
   height: 8rem;
-  transform: rotate(270deg); }
+  transform: rotate(270deg);
+  margin-left: -1rem; }
 
 footer {
   background-color: #000;
@@ -836,6 +841,7 @@ footer {
 
 .buy-card {
   width: 48rem;
+  height: 51rem;
   background-color: #F8F8F8;
   padding: 2rem;
   border-radius: .4rem; }

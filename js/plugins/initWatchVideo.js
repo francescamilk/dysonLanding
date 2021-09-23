@@ -48,37 +48,36 @@ const watchVideo = () => {
     btn6.classList.add('hide');
   };
 
-  // HIDE
-  vid1.onpause = function() {
-    btn1.classList.add('show');
-    vid1.classList.remove('show');
-  };
+  // // HIDE
+  // vid1.onpause = function() {
+  //   btn1.classList.add('show');
+  //   vid1.classList.remove('show');
+  // };
 
-  vid2.onpause = function() {
-    btn2.classList.add('show');
-    vid2.classList.remove('show');
-  };
+  // vid2.onpause = function() {
+  //   btn2.classList.add('show');
+  //   vid2.classList.remove('show');
+  // };
 
-  vid3.onpause = function() {
-    btn3.classList.add('show');
-    vid3.classList.remove('show');
-  };
+  // vid3.onpause = function() {
+  //   btn3.classList.add('show');
+  //   vid3.classList.remove('show');
+  // };
 
-  vid4.onpause = function() {
-    btn4.classList.add('show');
-    vid4.classList.remove('show');
-  };
+  // vid4.onpause = function() {
+  //   btn4.classList.add('show');
+  //   vid4.classList.remove('show');
+  // };
 
-  vid5.onpause = function() {
-    btn5.classList.add('show');
-    vid5.classList.remove('show');
-  };
+  // vid5.onpause = function() {
+  //   btn5.classList.add('show');
+  //   vid5.classList.remove('show');
+  // };
   
-  vid6.onpause = function() {
-    btn6.classList.add('show');
-    vid6.classList.remove('show');
-  };
-  
+  // vid6.onpause = function() {
+  //   btn6.classList.add('show');
+  //   vid6.classList.remove('show');
+  // };
 };
 
 export {watchVideo};
