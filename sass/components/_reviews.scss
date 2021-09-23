@@ -37,30 +37,44 @@
 }
 
 // speech bubble effect
-.r-body:before {
-  content: '';
-  position: absolute;
+.pointer {
+  height: 40px;
+  width: 40px;
+  background: #F8F8F8;
+  margin: 0 auto;
   transform: rotate(45deg);
-  width: 3.6rem;
-  height: 3.6rem;
-  bottom: -1.2rem;
-  z-index: -1;
+  border-radius: 0 0 .5rem 0;
+  margin-top: -6rem;
+  position: absolute;
+  right: -20rem;
+  left: calc(0.5vw - 50px);
+  z-index: 10;
 }
 
-.r-body:after {
-  content: '';
-	position: absolute;
-	bottom: 0;
-	left: 15%;
-	width: 0;
-	height: 0;
-	border: 2.6rem solid transparent;
-	border-top-color: $dExtraLightGrey;
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -1.3rem;
-	margin-bottom: -2.6rem;
-}
+// .r-body:before {
+//   content: '';
+//   position: absolute;
+//   transform: rotate(45deg);
+//   width: 3.6rem;
+//   height: 3.6rem;
+//   bottom: -1.2rem;
+//   z-index: -1;
+// }
+
+// .r-body:after {
+//   content: '';
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 15%;
+// 	width: 0;
+// 	height: 0;
+// 	border: 2.6rem solid transparent;
+// 	border-top-color: $dExtraLightGrey;
+// 	border-bottom: 0;
+// 	border-left: 0;
+// 	margin-left: -1.3rem;
+// 	margin-bottom: -2.6rem;
+// }
 
 
 .rate {

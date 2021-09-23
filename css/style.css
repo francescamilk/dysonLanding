@@ -119,6 +119,8 @@ p {
   width: 35vw; }
   .pf-copy h2 {
     margin-bottom: 2rem; }
+  .pf-copy h5 {
+    font-weight: 500; }
 
 .img-btn,
 .pick-btn {
@@ -129,7 +131,7 @@ p {
 .pick-btn {
   position: absolute;
   right: 60rem;
-  bottom: -90rem; }
+  bottom: -92.5rem; }
 
 .cp-btn {
   width: 3rem;
@@ -183,7 +185,7 @@ p {
     grid-area: 13 / 6; }
 
 .pf-text {
-  margin-top: 20rem;
+  margin-top: 8rem;
   display: none;
   background-color: #303030;
   color: #FFF;
@@ -502,28 +504,18 @@ p {
     margin-bottom: 2rem;
     padding: 0 .2rem; }
 
-.r-body:before {
-  content: '';
-  position: absolute;
+.pointer {
+  height: 40px;
+  width: 40px;
+  background: #F8F8F8;
+  margin: 0 auto;
   transform: rotate(45deg);
-  width: 3.6rem;
-  height: 3.6rem;
-  bottom: -1.2rem;
-  z-index: -1; }
-
-.r-body:after {
-  content: '';
+  border-radius: 0 0 .5rem 0;
+  margin-top: -6rem;
   position: absolute;
-  bottom: 0;
-  left: 15%;
-  width: 0;
-  height: 0;
-  border: 2.6rem solid transparent;
-  border-top-color: #F8F8F8;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: -1.3rem;
-  margin-bottom: -2.6rem; }
+  right: -20rem;
+  left: calc(0.5vw - 50px);
+  z-index: 10; }
 
 .rate {
   display: flex;
@@ -734,7 +726,8 @@ footer {
     width: 75rem; }
     footer .footer-links ul li {
       cursor: pointer;
-      font-size: initial; }
+      font-size: initial;
+      padding-bottom: .5rem; }
 
 @media only screen and (max-width: 768px) {
   footer .footer-main {
