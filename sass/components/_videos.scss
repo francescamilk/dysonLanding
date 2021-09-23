@@ -28,6 +28,14 @@
   border-radius: .1rem;
   background-position: top;
   position: relative;
+  overflow: hidden;
+}
+
+.style-vid {
+  height: 20rem;
+  width: 37rem;
+  margin-left: -1rem;
+  display: none;
 }
 
 .vid-1 {
@@ -133,6 +141,7 @@
 
 #modalVideo {
   @include modal;
+  z-index: 1001;
 }
 
 #closeModal {

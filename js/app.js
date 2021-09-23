@@ -6,6 +6,7 @@ import {openFaq} from './plugins/initOpenFaq.js';
 import {newsletterPopup} from './plugins/initNewsletterPopup.js';
 import {toTop} from './plugins/initToTop.js';
 import {toggleBuyDets} from './plugins/initToggleBuyDets.js';
+import {watchVideo} from './plugins/initWatchVideo.js';
 
 const app = () => {
    responsiveNav();
@@ -16,6 +17,7 @@ const app = () => {
    newsletterPopup();
    toTop();
    toggleBuyDets();
+   watchVideo();
 };
 
 app();

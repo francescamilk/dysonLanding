@@ -21,6 +21,9 @@
 .show {
   display: inline !important; }
 
+.hide {
+  display: none !important; }
+
 .hr-style {
   border: 0;
   height: .1rem;
@@ -375,7 +378,14 @@ p {
   height: 20rem;
   border-radius: .1rem;
   background-position: top;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+
+.style-vid {
+  height: 20rem;
+  width: 37rem;
+  margin-left: -1rem;
+  display: none; }
 
 .vid-1 {
   grid-area: 1 / 1; }
@@ -452,7 +462,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1001; }
 
 #closeModal {
   position: absolute;
