@@ -27,6 +27,17 @@
   }
 }
 
+.n-close-sm {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $dMain;
+  display: none;
+
+  &:hover {
+    color: $dDarkGrey;
+  }
+}
+
 .email-box {
   margin-top: 4rem;
 
@@ -76,8 +87,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .email-box input {
-    width: 18rem;
+  .email-box input,
+  #popSubmit {
+    width: 18rem !important;
+  }
+
+  .n-close-sm {
+    display: block;
+    position: absolute;
+    right: 10rem;
   }
 
   .canvas-right {

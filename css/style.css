@@ -771,6 +771,14 @@ footer {
     .pop-canvas .canvas-left h3 {
       margin-top: 6rem; }
 
+.n-close-sm {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #C4398D;
+  display: none; }
+  .n-close-sm:hover {
+    color: #303030; }
+
 .email-box {
   margin-top: 4rem; }
   .email-box #popSubmit {
@@ -807,8 +815,13 @@ footer {
   width: 10rem; }
 
 @media only screen and (max-width: 768px) {
-  .email-box input {
-    width: 18rem; }
+  .email-box input,
+  #popSubmit {
+    width: 18rem !important; }
+  .n-close-sm {
+    display: block;
+    position: absolute;
+    right: 10rem; }
   .canvas-right {
     display: none; } }
 
@@ -916,6 +929,12 @@ footer {
 #buyTogglePurple {
   font-weight: 800;
   cursor: pointer; }
+
+@media only screen and (max-width: 768px) {
+  .buy-card {
+    width: auto;
+    height: auto;
+    margin-top: 1rem; } }
 
 header {
   height: 100%;
